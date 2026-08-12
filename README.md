@@ -365,7 +365,7 @@ By End: Ready for Entry-Level SOC Role
 
 ## 👤 About This Portfolio
 
-**Created By:** Dheeraj  
+**Created By:** Dheeraj Kumar Repala  
 **Target Position:** Entry-Level SOC Analyst  
 **Status:** 🟢 Actively Learning & Documenting  
 **Last Updated:** August 2026
