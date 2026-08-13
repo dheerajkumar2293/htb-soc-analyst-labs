@@ -424,3 +424,12 @@ This module teaches **detection and response techniques** that apply across the 
 
 **Module 1 Complete! ✅**  
 Ready to move to **Module 2: Security Monitoring & SIEM Fundamentals**
+
+---
+
+<img width="1885" height="628" alt="image" src="https://github.com/user-attachments/assets/c3d18046-b7b8-4d76-a5a4-6b0f06465f15" />
+<img width="1266" height="847" alt="image" src="https://github.com/user-attachments/assets/cb0e495a-ea0e-4698-bb80-9298ae643ecd" />
+<img width="1218" height="330" alt="image" src="https://github.com/user-attachments/assets/bc3cd4d6-b041-4989-9f1b-29ca411020d5" />
+
+
+
