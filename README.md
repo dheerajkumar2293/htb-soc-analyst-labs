@@ -14,13 +14,14 @@ Complete hands-on documentation of the Hack The Box SOC Analyst certification pa
 Overall Progress: ████████░░░░░░░░░░░ 13.3% (2/15 modules complete)
 
 Modules Completed:     ✅ 2
-Modules In Progress:   🔄 0  
-Modules Remaining:     ⏳ 13
+Modules In Progress:   🔄 1  
+Modules Remaining:     ⏳ 12
 Estimated Completion:  September 2026 (~21 days)
 
 Recent Completions:
 ✅ Module 1: Incident Handling Process (Aug 2026)
 ✅ Module 2: Security Monitoring & SIEM Fundamentals (Aug 2026)
+🔄 Module 3: Windows Event Logs & Finding Evil (Aug 2026)
 ```
 
 ---
@@ -111,7 +112,7 @@ Recent Completions:
 
 ---
 
-### 🔄 IN PROGRESS (0/15)
+### 🔄 IN PROGRESS (1/15)
 
 **All modules completed so far!**
 
@@ -119,13 +120,8 @@ Next up: **Module 3: Windows Event Logs & Finding Evil**
 
 ---
 
-### ⏳ UPCOMING (13 modules)
+### ⏳ UPCOMING (12 modules)
 
-#### **Module 3: Windows Event Logs & Finding Evil**
-- Windows Event Log analysis
-- Identifying suspicious activities
-- Threat detection from logs
-- MITRE ATT&CK mapping
 
 #### **Module 4: Introduction To Threat Hunting & Hunting With Elastic**
 - Proactive threat hunting techniques
