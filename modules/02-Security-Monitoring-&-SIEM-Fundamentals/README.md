@@ -509,5 +509,17 @@ Next: Module 3 - Windows Event Logs & Finding Evil
 
 ---
 
+<img width="1874" height="672" alt="image" src="https://github.com/user-attachments/assets/45306efa-2260-465b-b763-18f0fb5bd306" />
+
+
 **Module 2 Complete! ✅**  
 Ready to move to **Module 3: Windows Event Logs & Finding Evil**
+
+---
+
+<img width="1221" height="838" alt="image" src="https://github.com/user-attachments/assets/63f5f902-3cb6-4b9f-9d39-bf60a38980e8" />
+<img width="1192" height="329" alt="image" src="https://github.com/user-attachments/assets/1408d4d6-d984-4122-ad38-bedb70086705" />
+
+
+
+
