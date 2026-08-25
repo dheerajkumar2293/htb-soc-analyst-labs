@@ -94,7 +94,8 @@ Real SOC Use: Incident responders use this 100x per day!
 
 ### Screenshot 1: Navigate to Event Log Directory
 
-![Step 1 - Navigate Directory](lab_step1_navigate_directory.png)
+<img width="697" height="215" alt="image" src="https://github.com/user-attachments/assets/6a81a328-932c-4ec5-bd9c-d927c722bc1a" />
+
 
 **What You See:**
 ```
@@ -112,7 +113,8 @@ Directory: C:\Tools\chainsaw\EVTX-ATTACK-SAMPLES\Lateral Movement
 
 ### Screenshot 2: Execute Search Command
 
-![Step 2 - Search Command](lab_step4_search_command.png)
+<img width="1516" height="561" alt="image" src="https://github.com/user-attachments/assets/ac59730e-ba56-4c1f-a8bb-6e043c231da1" />
+
 
 **What You See:**
 ```
@@ -132,7 +134,8 @@ Searching C:\Tools\chainsaw\EVTX-ATTACK-SAMPLES\Lateral Movement\DFIR_RDP_Client
 
 ### Screenshot 3: Found the Answer!
 
-![Step 3 - Found Answer](lab_step5_found_answer.png)
+<img width="965" height="550" alt="image" src="https://github.com/user-attachments/assets/7f856838-eada-4b4a-b944-d695dac23f95" />
+
 
 **What You See:**
 ```
