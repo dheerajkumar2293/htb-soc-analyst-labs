@@ -554,6 +554,13 @@ I'm now able to:
 
 ---
 
+<img width="620" height="397" alt="image" src="https://github.com/user-attachments/assets/57bb4b4b-0bba-427d-85dc-160e9e7d7ead" />
+
+---
+
+<img width="1002" height="692" alt="image" src="https://github.com/user-attachments/assets/b8f5a8d7-9089-4d97-b1b0-172b3e24df60" />
+
+
 **Module 3 Complete!** 🎉  
 **Progress: 3/15 Modules (20%)** 📈  
 **Next: Module 4 - Threat Hunting with Elastic** 🔍
