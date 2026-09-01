@@ -38,7 +38,7 @@ event.code:15 AND file.name:*invoice.one
 - Host: WS001
 - IP: 192.168.28.130
 
-**[IMAGE 1 from DOC1.docx: Initial OneNote Download]**
+****
 - Shows: Browser download event from file.io
 - Evidence: Zone.Identifier present (internet origin)
 
