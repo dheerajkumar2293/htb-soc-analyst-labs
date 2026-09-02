@@ -14,22 +14,23 @@ Complete hands-on documentation of the Hack The Box SOC Analyst certification pa
 ```
 Overall Progress: ████████████░░░░░░░░░░ 20% (3/15 modules complete)
 
-Modules Completed:     ✅ 3
+Modules Completed:     ✅ 4
 Modules In Progress:   🔄 0  
-Modules Remaining:     ⏳ 12
+Modules Remaining:     ⏳ 11
 Estimated Completion:  September 2026 (~19 days remaining)
 
 Recent Completions:
 ✅ Module 1: Incident Handling Process (Aug 2026)
 ✅ Module 2: Security Monitoring & SIEM Fundamentals (Aug 2026)
 ✅ Module 3: Windows Event Logs & Finding Evil (Aug 2026)
+✅ Module 4:Introduction to Threat Hunting & Hunting With Elastic
 ```
 
 ---
 
 ## 📚 All 15 Modules Status
 
-### ✅ COMPLETED (3/15)
+### ✅ COMPLETED (4/15)
 
 #### **Module 1: Incident Handling Process** ✅
 - **Date:** August 2026
@@ -99,21 +100,44 @@ Recent Completions:
 [📖 Read Module 3 Full Writeup](./modules/03-windows-event-logs/README.md)
 
 ---
+#### **Module 4: Introduction to Threat Hunting & Hunting with Elastic** ✅ **NEW!**
+- **Date:** August 2026 | **Time:** ~5 hours | **Rating:** ⭐⭐⭐⭐⭐
+- **Difficulty:** Medium (Tier 2)
+- **Key Skills:** 
+  - Hypothesis-driven hunting methodology
+  - 7-step threat hunting workflow
+  - Threat intelligence integration
+  - IOC identification and use
+  - Pyramid of Pain framework
+  - Diamond Model of intrusion analysis
+- **Tools:** Elastic Stack, Kibana Query Language (KQL), threat intelligence platforms
+- **Real-World Applications:**
+  - Dwell time reduction (average 200+ days → < 30 days with hunting)
+  - Proactive threat discovery
+  - APT campaign tracking
+  - Emotet malware hunting example
+- **Key Concepts Mastered:**
+  - Difference between detection (reactive) vs. hunting (proactive)
+  - TTPs (Tactics, Techniques, Procedures) for threat modeling
+  - Behavior-based hunting vs. IOC-based hunting
+  - Campaign and threat group analysis
+- **Hunt Examples:**
+  - Credential dumping campaigns
+  - Lateral movement via admin shares
+  - Persistence mechanism detection
+  - C2 communication patterns
+
+[📖 Read Full Writeup](./modules/04-threat-hunting-&-threat-hunting-with-elastic/README.md)
 
 ### 🔄 IN PROGRESS (0/15)
 
 **No modules currently in progress.**  
-All completed modules fully documented. Ready for Module 4.
+All completed modules fully documented. Ready for Module 5.
 
 ---
 
 ### ⏳ UPCOMING (12 modules)
 
-#### **Module 4: Introduction To Threat Hunting & Hunting With Elastic**
-- Proactive threat hunting techniques
-- Elastic Stack query writing
-- Indicator of Compromise (IOC) hunting
-- Advanced Kibana queries
 
 #### **Module 5: Understanding Log Sources & Investigating With Splunk**
 - Splunk fundamentals
@@ -141,64 +165,83 @@ All completed modules fully documented. Ready for Module 4.
 
 ## 🎯 CUMULATIVE SKILLS ACHIEVED
 
-### Technical Skills (Building Progressively)
-- ✅ **SIEM Fundamentals:** Elastic Stack architecture, data flow, alerting
-- ✅ **Windows Forensics:** Event Log analysis, Sysmon, threat patterns
-- ✅ **Log Analysis:** Query optimization, timeline building, pattern recognition
-- ✅ **Incident Investigation:** Evidence preservation, root cause analysis
-- ✅ **Threat Detection:** Alert triage, false positive identification
-- ⏳ **Splunk SIEM** (Module 5)
-- ⏳ **Network Analysis** (Modules 7-8)
-- ⏳ **Malware Analysis** (Module 10)
-- ⏳ **Detection Rules** (Module 12)
-- ⏳ **Digital Forensics** (Module 13)
+### Technical Skills (4 Modules, Progressive Building)
 
-### Frameworks & Standards
-- ✅ **NIST Incident Response Framework** (6-stage model)
-- ✅ **MITRE ATT&CK Framework** (tactics, techniques, procedures)
-- ✅ **Cyber Kill Chain** (attack lifecycle)
-- ✅ **Chain of Custody** (evidence handling)
-- ⏳ **Security Incident Reporting Standards** (Module 15)
+**Reactive Security Operations:**
+- ✅ Incident response procedures (6-stage NIST)
+- ✅ SIEM alert detection and triage
+- ✅ Elastic Stack data pipeline
+- ✅ Dashboard and visualization creation
 
-### Blue Team Competencies
-- ✅ **Defensive Operations:** Monitoring, detection, response
-- ✅ **Forensic Investigation:** Evidence analysis, timeline building
-- ✅ **Threat Analysis:** Pattern recognition, attack identification
-- ✅ **Log Analysis:** Searching, filtering, correlation
-- ✅ **Incident Triage:** Classification, escalation, prioritization
+**Investigation & Forensics:**
+- ✅ Windows Event Log analysis
+- ✅ Sysmon forensic data collection
+- ✅ PowerShell event querying (Get-WinEvent)
+- ✅ Timeline building and correlation
+- ✅ Evidence preservation and chain of custody
+
+**Proactive Threat Operations:**
+- ✅ Hypothesis-driven threat hunting
+- ✅ Elastic stack querying for threats
+- ✅ Threat intelligence integration
+- ✅ IOC identification and hunting
+- ✅ Campaign-based analysis
+
+**Frameworks & Standards:**
+- ✅ NIST Incident Response Framework (6 stages)
+- ✅ MITRE ATT&CK Framework (tactics & techniques)
+- ✅ Cyber Kill Chain (attack lifecycle)
+- ✅ Pyramid of Pain (indicator effectiveness)
+- ✅ Diamond Model (intrusion analysis)
+- ✅ Chain of Custody (evidence handling)
+
+**Blue Team Competencies:**
+- ✅ Defensive operations (detection + response)
+- ✅ Forensic investigation (depth analysis)
+- ✅ Proactive threat hunting (discovery)
+- ✅ Log analysis and querying
+- ✅ Incident triage and escalation
+- ✅ Threat intelligence application
+
+---
+
+## 📈 CAREER READINESS PROGRESSION
+
+```
+After Module 1: 40% ready (know procedures)
+After Module 2: 60% ready (know detection)
+After Module 3: 75% ready (know investigation)
+After Module 4: 85% ready (know proactive hunting)
+Target: 95%+ after all 15 modules
+```
+
+**What You Can Do Now:**
+- ✅ Respond to security incidents properly
+- ✅ Understand how SIEM detects threats
+- ✅ Investigate Windows systems forensically
+- ✅ Hunt for threats proactively
+- ✅ Answer most SOC analyst interview questions
 
 ---
 
 ## 💼 PORTFOLIO VALUE PROPOSITION
 
-### For Job Applications
-- ✅ **Demonstrates systematic learning** (not random YouTube videos)
-- ✅ **Hands-on lab completion** (practical skills, not just theory)
-- ✅ **Professional documentation** (clear communication skills)
-- ✅ **Job-specific knowledge** (what actual SOC analysts do)
-- ✅ **Progressive skill building** (20% complete, on track)
+### Why This Portfolio Impresses Recruiters
 
-### For Technical Interviews
-You can now confidently discuss:
-- **Incident Response:** Complete 6-stage process
-- **SIEM Detection:** How threats are found
-- **Windows Forensics:** How to investigate Windows systems
-- **Investigation Methodology:** From alert to conclusion
-- **Real Attack Scenarios:** DLL hijacking, credential theft, process injection
+**Shows:**
+- Systematic, structured learning (not random)
+- Hands-on practical skills (not just theory)
+- Progressive skill building (26.7% complete, on track)
+- Professional documentation (clear communication)
+- Blue Team focus (what they need to hire)
+- Real-world application knowledge
 
-### For Interviews - Expected Questions Answered
-
-**"Walk me through your understanding of incident response"**
-→ Module 1 covers complete NIST framework, phases, escalation procedures
-
-**"How does a SIEM detect threats?"**
-→ Module 2 explains detection pipeline, alert creation, triage
-
-**"How would you investigate a suspicious process?"**
-→ Module 3 teaches Windows log analysis, Sysmon queries, timeline building
-
-**"Describe a real attack scenario"**
-→ Can explain credential dumping, DLL hijacking, or injection attacks with forensic details
+**Demonstrates:**
+- Discipline (completing modules consistently)
+- Technical depth (detailed explanations)
+- Professional communication (documentation quality)
+- Job-specific knowledge (SOC workflows understood)
+- Commitment to cybersecurity career
 
 ---
 
@@ -245,81 +288,63 @@ htb-soc-analyst-labs/
 ## 🚀 How to Use This Portfolio
 
 ### For Job Applications
-1. **Add to Resume:**
+1. **Resume:**
    ```
-   HTB Academy SOC Analyst Portfolio
-   github.com/dheeraj2293/htb-soc-analyst-labs
-   • 3/15 modules complete (20%) - Incident Response, SIEM, Windows Forensics
-   • Hands-on labs with detailed technical documentation
-   • Blue Team focus: Defensive security and threat detection
-   ```
-
-2. **Mention in Cover Letter:**
-   ```
-   "I'm actively completing the Hack The Box SOC Analyst certification path,
-   documenting hands-on labs at [GitHub link]. I've completed incident response,
-   SIEM fundamentals, and Windows forensic analysis modules, demonstrating
-   practical understanding of threat detection and security operations."
+   HTB Academy SOC Analyst Portfolio (4/15 modules - 26.7%)
+   - Incident Response ✅ | SIEM Fundamentals ✅
+   - Windows Forensics ✅ | Threat Hunting ✅
+   - github.com/dheeraj2293/htb-soc-analyst-labs
    ```
 
-3. **Link on LinkedIn:**
-   - Add to Featured section
-   - Reference in headline/about
-   - Share module completion posts
+2. **Cover Letter:**
+   ```
+   "I'm completing the Hack The Box SOC Analyst certification,
+   actively documenting hands-on labs demonstrating practical skills
+   in incident response, SIEM operations, forensic investigation,
+   and proactive threat hunting. Visit [GitHub] to see my progress."
+   ```
 
-### During Technical Interviews
-1. **Open your GitHub** live during call
-2. **Walk through a module:**
-   - "Let me show you my Module 3 on Windows forensics"
-   - Explain a real attack scenario you documented
-   - Discuss investigation methodology
-3. **Answer with examples:**
-   - Reference specific Event IDs
-   - Cite real-world attack patterns
-   - Describe forensic evidence chains
+3. **LinkedIn:** Add portfolio link to Featured section
 
-### For Your Own Learning
-- **Each module builds on previous:** Response → Detection → Investigation → Advanced
-- **Use as reference:** Query syntax, Event IDs, attack patterns
-- **Compare to job postings:** See which modules match specific job requirements
+### During Interviews
+1. Open GitHub live (show confidence in your work)
+2. Walk through a module (demonstrate understanding)
+3. Discuss a real attack scenario you documented
+4. Explain investigation methodology
+5. Reference specific Event IDs, queries, concepts
 
 ---
 
-## 📈 Learning Roadmap
+## 🎓 Interview Questions You Can Now Answer
 
-```
-Week 1 (Days 1-3):
-  ✅ Module 1: Incident Handling (COMPLETE)
-  ✅ Module 2: SIEM Fundamentals (COMPLETE)
+**"Walk me through your understanding of incident response"**
+→ Complete NIST 6-stage framework with escalation procedures
 
-Week 1-2 (Days 4-7):
-  ✅ Module 3: Windows Event Logs (COMPLETE)
-  
-Week 2-3:
-  ⏳ Module 4: Threat Hunting with Elastic (NEXT)
-  ⏳ Module 5: Splunk Fundamentals
+**"How does a SIEM detect threats?"**
+→ Data pipeline from collection through alerting with Elastic Stack examples
 
-Week 3-4:
-  ⏳ Modules 6-8: Windows Attacks, Network Analysis
-  ⏳ Modules 9-12: IDS/IPS, Malware, Detection Rules
+**"How would you investigate a suspicious Windows process?"**
+→ Event ID 4688 queries, Sysmon process details, timeline building
 
-Week 4-5:
-  ⏳ Modules 13-15: Forensics, Advanced Detection, Reporting
+**"What's the difference between detection and hunting?"**
+→ Detection = reactive (SIEM alerts), Hunting = proactive (hypothesis-driven search)
 
-Target Completion: September 2026
-Ready for Entry-Level SOC Role: End of curriculum
-```
+**"Describe how you'd hunt for credential theft."**
+→ Hypothesis formation, Elastic queries for LSASS access, behavior pattern analysis
+
+**"What's dwell time and why does it matter?"**
+→ Attackers in network for 200+ days on average; hunting reduces it to <30 days
 
 ---
 
-## 📊 Module-by-Module Skill Mapping
+## 📊 Module-by-Module Value
 
-| Module | Teaches | SOC Application | Confidence |
-|--------|---------|-----------------|-----------|
-| 1 | Incident response process | How to handle incidents | 85% ✅ |
-| 2 | SIEM detection | How to find threats | 85% ✅ |
-| 3 | Windows forensics | Where evidence comes from | 85% ✅ |
-| 4 | Threat hunting | Proactive searching | TBD ⏳ |
+| Module | What It Teaches | Job Impact | Confidence |
+|--------|-----------------|-----------|-----------|
+| 1 | How to respond | Essential procedures | 85% ✅ |
+| 2 | How to detect | SIEM mastery | 85% ✅ |
+| 3 | Where evidence comes from | Forensic depth | 85% ✅ |
+| 4 | How to hunt | Proactive skills | 80% ✅ |
 | 5 | Splunk SIEM | Commercial SIEM mastery | TBD ⏳ |
 | 6 | Windows attacks | Understanding attack methods | TBD ⏳ |
 | 7-8 | Network analysis | Network-based detection | TBD ⏳ |
@@ -336,7 +361,7 @@ Ready for Entry-Level SOC Role: End of curriculum
 ## ✨ Achievements Summary
 
 **Learning Progress:**
-- ✅ Foundation complete (Modules 1-3)
+- ✅ Foundation complete (Modules 1-4)
 - ✅ Core SOC competencies established
 - ✅ Ready for specialized modules
 - ✅ Can explain incident response → detection → investigation chain
@@ -369,7 +394,7 @@ Ready for Entry-Level SOC Role: End of curriculum
 **Created By:** Dheeraj Kumar Repala  
 **Target Position:** Entry-Level SOC Analyst (Blue Team)  
 **Status:** 🟢 Actively Learning & Documenting  
-**Completion:** 20% (3 of 15 modules)  
+**Completion:** 26.7% (4 of 15 modules)  
 **Last Updated:** August 2026
 
 This portfolio demonstrates:
