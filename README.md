@@ -3,7 +3,7 @@
 Complete hands-on documentation of the Hack The Box SOC Analyst certification path. This portfolio demonstrates practical cybersecurity skills in incident response, SIEM monitoring, Windows forensics, and threat detection.
 
 **Target Role:** Entry-Level SOC Analyst (Blue Team)  
-**Status:** 🟢 Active Learning (3/15 modules complete)  
+**Status:** 🟢 Active Learning (4/15 modules complete)  
 **Progress:** 20% Complete  
 **Last Updated:** August 2026
 
