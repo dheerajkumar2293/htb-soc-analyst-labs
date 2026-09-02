@@ -127,7 +127,7 @@ Recent Completions:
   - Persistence mechanism detection
   - C2 communication patterns
 
-[📖 Read Full Writeup](./modules/04-threat-hunting-&-threat-hunting-with-elastic/README.md)
+[📖 Read Module 4 Full Writeup](./modules/04-threat-hunting-&-threat-hunting-with-elastic/README.md)
 
 ### 🔄 IN PROGRESS (0/15)
 
