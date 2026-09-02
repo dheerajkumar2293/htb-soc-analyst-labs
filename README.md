@@ -12,7 +12,7 @@ Complete hands-on documentation of the Hack The Box SOC Analyst certification pa
 ## 📊 Progress Dashboard
 
 ```
-Overall Progress: ████████████░░░░░░░░░░ 20% (3/15 modules complete)
+Overall Progress: █████████░░░░░░░░░░░░░ 26.7% (4/15 modules complete)
 
 Modules Completed:     ✅ 4
 Modules In Progress:   🔄 0  
