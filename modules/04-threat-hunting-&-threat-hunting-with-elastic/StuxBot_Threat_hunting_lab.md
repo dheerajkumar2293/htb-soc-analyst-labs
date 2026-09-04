@@ -1,4 +1,4 @@
-# Stuxbot Lab - Complete Investigation Process Documentation
+# Stuxbot Threat Hunting
 
 Step-by-step walkthrough of the threat hunting investigation with all screenshots from DOC1.docx integrated.
 
