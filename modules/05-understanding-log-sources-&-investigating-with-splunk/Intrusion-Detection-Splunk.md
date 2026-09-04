@@ -1,4 +1,4 @@
-# Intrusion Detection with Splunk - Complete Lab with Screenshots
+# Intrusion Detection with Splunk
 
 ## Overview
 
