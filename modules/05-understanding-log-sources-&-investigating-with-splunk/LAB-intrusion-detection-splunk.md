@@ -36,7 +36,7 @@ First, I checked what data sources were available in the environment:
 index="main" | stats count by sourcetype
 ```
 
-![Data Sources Discovery](./lab-images/image1.png)
+<img width="1090" height="368" alt="image" src="https://github.com/user-attachments/assets/34ccbe3f-25a0-439a-a015-89e765441729" />
 
 This revealed Windows Event Logs and Sysmon as key data sources.
 
@@ -57,11 +57,11 @@ index="main" sourcetype="WinEventLog:Sysmon" EventCode=10 lsass
 | stats count by SourceImage
 ```
 
-![Process Access to lsass](./lab-images/image2.png)
+<img width="1090" height="337" alt="image" src="https://github.com/user-attachments/assets/1ff17929-bc1a-464e-99a9-4d80bbfd2f11" />
 
 **Step 4: Analyze Results**
 
-![lsass Dumping Analysis](./lab-images/image3.png)
+<img width="1090" height="467" alt="image" src="https://github.com/user-attachments/assets/8d7e7559-f291-4693-a745-09fa7f5738da" />
 
 Results showed:
 - **lsass.exe**: 99 occurrences (accessing itself - normal)
@@ -88,7 +88,7 @@ Find which DLL was used by rundll32.exe to dump lsass credentials.
 
 **Step 1: Analyze Source Images for rundll32**
 
-![Analyzing rundll32 for DLL Loading](./lab-images/image4.png)
+<img width="1090" height="388" alt="image" src="https://github.com/user-attachments/assets/2572065a-a884-4fdc-bd0a-455650ca48dc" />
 
 I needed to find what DLL rundll32 loaded. The screenshot shows multiple source images being analyzed.
 
@@ -100,7 +100,7 @@ I searched for EventCode 1 (Process Creation) to see the command-line arguments:
 index="main" sourcetype="WinEventLog:Sysmon" EventCode=1 Image="*rundll32*"
 ```
 
-![Process Creation Query Results](./lab-images/image5.png)
+<img width="1090" height="262" alt="image" src="https://github.com/user-attachments/assets/b840416c-a154-4e86-9585-0568bc6952ab" />
 
 This revealed the DLL being loaded by rundll32.
 
@@ -137,7 +137,7 @@ index="main" sourcetype="WinEventLog:Sysmon" EventCode=7 clr.dll
 | stats count by Image
 ```
 
-![CLR.DLL Loading Events](./lab-images/image6.png)
+<img width="1090" height="389" alt="image" src="https://github.com/user-attachments/assets/702df99f-cde9-4927-86f9-90872d57916c" />
 
 Found multiple processes loading clr.dll. Now needed to identify suspicious ones.
 
@@ -153,11 +153,11 @@ index="main" sourcetype="WinEventLog:Sysmon" EventCode=7 clr.dll
 | where count < 10
 ```
 
-![Filtered CLR.DLL Results](./lab-images/image7.png)
+<img width="1090" height="404" alt="image" src="https://github.com/user-attachments/assets/dd5a2076-6283-44ca-988b-ad89fdfe7209" />
 
 **Step 3: Identify Temporary Execution**
 
-![CLR.DLL Loading by Process](./lab-images/image8.png)
+<img width="1090" height="225" alt="image" src="https://github.com/user-attachments/assets/5c9aae03-2fe9-4267-b195-53be11ea0eeb" />
 
 Results showed:
 - **notepad.exe**: 12 clr.dll loads (persistent)
@@ -191,7 +191,7 @@ I initially searched without filtering:
 index="main" sourcetype="WinEventLog:Sysmon" EventCode=3 ComputerName="uniwaldo.local"
 ```
 
-![Initial Network Search](./lab-images/image9.png)
+<img width="1090" height="354" alt="image" src="https://github.com/user-attachments/assets/d383581c-ae71-4512-ba83-96c61cf102e1" />
 
 Noticed many connections with a count around 10, then refined to focus on destination IPs.
 
@@ -203,7 +203,7 @@ index="main" sourcetype="WinEventLog:Sysmon" EventCode=3 DestinationIp="10.0.0.*
 | sort - count
 ```
 
-![C2 Server Discovery](./lab-images/image10.png)
+<img width="1090" height="241" alt="image" src="https://github.com/user-attachments/assets/b0e367da-995c-482d-b208-4991d3f7b799" />
 
 Identified **10.0.0.91** with 143 connections as the primary C2 server.
 
@@ -216,7 +216,7 @@ index="main" sourcetype="WinEventLog:Sysmon" EventCode=3 DestinationIp="10.0.0.1
 | stats count by DestinationIp, ComputerName
 ```
 
-![Secondary C2 Analysis](./lab-images/image11.png)
+<img width="1090" height="295" alt="image" src="https://github.com/user-attachments/assets/1a7e1b09-90f7-458b-a0c0-93712eb61fcf" />
 
 Found candidates: 10.0.0.137 (12 connections) and 10.0.0.186 (7 connections)
 
@@ -256,13 +256,13 @@ index="main" sourcetype="WinEventLog:Sysmon" EventCode=3
 
 **Step 2: Analyze Port Usage**
 
-![C2 Port Analysis](./lab-images/image12.png)
+<img width="1090" height="315" alt="image" src="https://github.com/user-attachments/assets/0db0f3ba-26cd-46b0-87e7-890884d32e5c" />
 
 Results showed various ports being used for communication.
 
 **Step 3: Identify Primary C2 Port**
 
-![C2 Communication Port - Final Result](./lab-images/image13.png)
+<img width="1090" height="376" alt="image" src="https://github.com/user-attachments/assets/067ae1b7-0e1c-454a-a645-9c89be09cbc2" />
 
 Port analysis revealed:
 - **Port 3389** = RDP (Remote Desktop Protocol)
