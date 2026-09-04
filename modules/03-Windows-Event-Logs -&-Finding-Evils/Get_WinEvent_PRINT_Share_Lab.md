@@ -1,4 +1,4 @@
-# HTB Academy Lab: Lateral Movement Detection via Event Log Analysis
+# Lateral Movement Detection via Event Log Analysis
 
 **Lab Name:** Get-WinEvent - Identify PRINT Share Addition Time  
 **Difficulty Level:** Intermediate  
