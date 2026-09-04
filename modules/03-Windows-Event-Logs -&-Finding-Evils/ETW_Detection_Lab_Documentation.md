@@ -1,4 +1,4 @@
-# HTB Academy: ETW Detection Lab - Documentation
+# ETW Detection
 
 **Lab Name:** Detecting Malicious .NET Assembly Loading Using ETW  
 **Difficulty Level:** Advanced  
